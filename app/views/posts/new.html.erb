@@ -1,16 +1,24 @@
-<div class="page-header"><h1>Upload Photo</h1></div>
+<div class="page_header">
 
-<%= form_for @post do |f| %>
+  <h1>Upload Photo</h1>
 
-  <div class="form-group">
-    <%= f.label :caption %>
-    <%= f.text_field :caption, class: 'form-control' %>
-  </div>
+  <%= form_for @post do |f| %>
 
-  <div class="form-group">
-    <%= f.label :image %>
-    <%= f.file_field :image, class: 'form-control'%>
-  </div>
+    <div class="form_group">
+      <%= f.label :caption, id: "label" %>
+      <%= f.text_field :caption, class: 'form_control' %>
+    </div>
 
-  <%= f.submit 'Upload', class: 'btn btn-primary' %>
-<% end %>
+    <div class="form_group">
+      <%= f.label :image, id: "label", value: "Choose a file" %>
+
+      <span class="form_control choose_img_btn">
+        <%= f.file_field :image %>
+        <h6>click here</h6>
+      </span>
+
+    </div>
+
+    <%= f.submit 'Upload', class: 'btn btn_primary' %>
+  <% end %>
+</div>

@@ -1,3 +1,25 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.posts_container {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid red;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  .post_container {
+    // border: 1px solid purple;
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: $off;
+    margin-bottom: 1rem;
+    .post_image {
+      // border: 1px solid lightblue;
+      margin-bottom: 1rem;
+    }
+    .post_caption {
+      // border: 1px solid orange;
+      color: $dark;
+    }
+  }
+}
