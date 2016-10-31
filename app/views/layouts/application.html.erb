@@ -11,26 +11,35 @@
   </head>
 
   <body>
-    <div class="logo">
-        <%= image_tag("logo.png", :alt => "main logo", id: "logo") %>
+
+    <div class="top_banner">
+      <div class="logo">
+          <%= image_tag("logo.png", :alt => "main logo", id: "logo") %>
+      </div>
+
+      <div class="nav_bar">
+        <ul class="nav_bar_list">
+          <li>
+            <%= link_to "Posts Page", root_path %>
+          </li>
+          <li>
+            <%= link_to "New Post", new_post_path %>
+          </li>
+          <li>
+            <%= link_to "Login", '#' %>
+          </li>
+          <li>
+            <%= link_to "Register", '#' %>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="nav-bar">
-      <ul class="nav-bar-list">
-        <li>
-          <%= link_to "Posts Page", root_path %>
-        </li>
-        <li>
-          <%= link_to "New Post", new_post_path %>
-        </li>
-        <li>
-          <%= link_to "Login", '#' %>
-        </li>
-        <li>
-          <%= link_to "Register", '#' %>
-        </li>
-      </ul>
-    </div>
+    
+
+
+
 
 
 
