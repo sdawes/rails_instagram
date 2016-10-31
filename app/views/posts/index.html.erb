@@ -1,1 +1,6 @@
-<h1>There are no posts</h1>
+<div class="page-header"><h1>Posts</h1></div>
+
+<% @posts.each do |post| %>
+  <%= image_tag post.image.url(:medium) %>
+  <p><%= post.caption %></p>
+<% end %>
